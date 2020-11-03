@@ -1,11 +1,17 @@
-package oo.aula4.thisExample;
+package oo.aula4.superExample;
 
-public class Veiculo {
+public abstract class Veiculo {
 
     private String modelo;
     private String marca;
 
     private double valorVenal;
+
+    public Veiculo(String modelo, String marca, double valorVenal) {
+        this.modelo = modelo;
+        this.marca = marca;
+        this.valorVenal = valorVenal;
+    }
 
     public String getModelo() {
         return modelo;
