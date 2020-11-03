@@ -1,4 +1,4 @@
-package oo.aula1;
+package oo.aula1Paradigma;
 
 public class Pessoa {
     public String nome = "Marcos";

@@ -1,4 +1,4 @@
-package oo.aula1;
+package oo.aula1Paradigma;
 
 public class ExemploInstanciaObjeto {
     public static void main(String[] args){
