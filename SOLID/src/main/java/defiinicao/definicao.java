@@ -10,5 +10,6 @@ public class definicao {
         L - Liskov Substitution Principle (Substituição de Liskov)
         I - Interfacee Segregation Principle (Segregação de Interface)
         D - Dependency Inversion Principle (Inversão de Indetpendência)
+
      */
 }
