@@ -1,6 +1,6 @@
 package defiinicao;
 
-public class definicao {
+public class Definicao {
     /* O QUE É?
         -Acrônomo dos princípios da programação orientada a objetos
         -Auxilia a escrever códigos mais limpos, facilitando a refatoraão e estimula o reaproveitamento do código
