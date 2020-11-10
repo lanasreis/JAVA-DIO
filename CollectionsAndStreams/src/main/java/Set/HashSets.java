@@ -1,5 +1,6 @@
 package Set;
 
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -33,7 +34,7 @@ public class HashSets {
             System.out.println("-----> " + nota);
         }
 
-        notasAlunos.clear();
-        System.out.println(notasAlunos.isEmpty());
+///        notasAlunos.clear();
+        System.out.println(notasAlunos);
     }
 }
