@@ -1,5 +1,6 @@
 package Queue;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -56,5 +57,8 @@ public class Exercicio {
         else{
             System.out.println("O nome esta na posicao "+ index);
         }
+
+        filaPessoas.clear();
+        System.out.println(filaPessoas.poll());
     }
 }
