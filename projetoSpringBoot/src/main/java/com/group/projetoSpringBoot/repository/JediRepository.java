@@ -1,5 +1,6 @@
 package com.group.projetoSpringBoot.repository;
 
+import com.group.projetoSpringBoot.exceptions.JediNotFoundException;
 import com.group.projetoSpringBoot.model.Jedi;
 import org.springframework.stereotype.Repository;
 
@@ -21,5 +22,14 @@ public class JediRepository {
 
     public void add(final Jedi jedi) {
         this.jedi.add(jedi);
+    }
+
+    public Jedi getJedi(int pos) throws JediNotFoundException {
+        if(jedi.size() > pos){
+            return jedi.get(pos);
+        }
+        else{
+            throw new JediNotFoundException();
+        }
     }
 }
