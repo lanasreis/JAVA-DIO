@@ -20,16 +20,15 @@ public class JediRepository {
         return this.jedi;
     }
 
-    public void add(final Jedi jedi) {
+    public Jedi add(final Jedi jedi) {
+
         this.jedi.add(jedi);
+
+        return jedi;
     }
 
+
     public Jedi getJedi(int pos) throws JediNotFoundException {
-        if(jedi.size() > pos){
-            return jedi.get(pos);
-        }
-        else{
-            throw new JediNotFoundException();
-        }
+        return jedi.get(pos);
     }
 }
