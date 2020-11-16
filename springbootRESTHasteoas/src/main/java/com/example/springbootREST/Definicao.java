@@ -6,4 +6,5 @@ public class Definicao {
 
         - Vamos imaginar  que nos estamos nos preparando para ser atacados e temos uma lista de soldados, mas não sabemos de qual tipo de cada soldado e se o mesmo está disponível para ir a guerra
     */
+
 }

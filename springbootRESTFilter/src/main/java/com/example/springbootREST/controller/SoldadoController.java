@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("v2/soldado")
+@RequestMapping("/v1/soldado")
 public class SoldadoController {
     private SoldadoService soldadoService;
     private ObjectMapper objectMapper;
@@ -31,8 +31,9 @@ public class SoldadoController {
         return ResponseEntity.status(HttpStatus.OK).body(soldadoResponse);
     }
 
-    @PostMapping()
+    @PostMapping
     public ResponseEntity criarSoldado(@RequestBody Soldado soldado) {
+        System.out.println("Entrou no post");
         soldadoService.criarSoldado(soldado);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
