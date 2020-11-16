@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.0'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'idea'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	//Trabalhar com java WEB
+	//Ja contem a lib do Jackson
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	//Hateoas
+	implementation 'org.springframework.hateoas:spring-hateoas'
+	implementation 'org.springframework.plugin:spring-plugin-core'
+
+	//Trabalhar com banco de dados
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	//H2
+	runtime 'com.h2database:h2:1.0.60'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
